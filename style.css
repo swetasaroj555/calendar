@@ -1,0 +1,77 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  background: white;
+  user-select: none;
+}
+
+.animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid;
+  color: rgb(131, 126, 126);
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.inner {
+  overflow: hidden;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+}
+.inner div div {
+  display: inline-block;
+  color: white;
+  padding: 3px 20px;
+  margin-bottom: 40px;
+}
+
+.inner div:nth-child(1) div {
+  background: rgb(56, 199, 239);
+}
+.inner div:nth-child(2) {
+  background: rgb(238, 60, 60);
+}
+.inner div:nth-child(3) {
+  background: rgb(53, 224, 127);
+}
+.inner div:nth-child(1) {
+  animation-name: animate;
+  animation-duration: 4s;
+  animation-delay: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+  0% {
+    margin-top: -270px;
+  }
+
+  5% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  38% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -27px;
+  }
+}
